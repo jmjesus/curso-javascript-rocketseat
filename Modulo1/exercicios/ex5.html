@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5</title>
+</head>
+
+<body>
+    <script>
+        function seila() {
+            var resultado;
+
+            var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+
+            for (var usuario of usuarios) {
+                resultado = 'O ' + usuario.nome + ' possui as habilidades: ' + usuario.habilidades.join(', ');
+
+                console.log(resultado)
+            }
+        }
+
+        seila();
+        
+    </script>
+</body>
+
+</html>
