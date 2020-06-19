@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+<body>
+    <button id="botao">Adicionar</button>
+    <div id="quadrados"></div>
+    
+    <script>
+        botao.onclick = function() {
+            var quadradosElement = document.getElementById('quadrados');
+            var quadrado = document.createElement('div');
+            quadrado.style.width = '100px';
+            quadrado.style.height = '100px';
+            quadrado.style.backgroundColor = 'red';
+            quadrado.style.marginTop = '2px';
+            quadradosElement.appendChild(quadrado);
+        }
+    </script>
+</body>
+</html>

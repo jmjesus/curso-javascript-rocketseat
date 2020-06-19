@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="nome" class="nome" />
+        <input type="text" name="nome" id="nome" class="nome" />
+        <button class="botao">Adicionar</button>
+    </div>
+
+    <script>
+        // var inputElement = document.getElementById('nome');
+        // var inputElement = document.getElementsByTagName('input');
+        // var inputElement = document.getElementsByTagName('input')[0];
+        // var inputElement = document.getElementsByClassName('nome');
+        // var inputElement = document.getElementsByClassName('nome')[0];
+        
+        // var inputElement = document.querySelector('div#app input');
+        // var inputElement = document.querySelector('input[name=nome]');
+        // var inputElement = document.querySelector('input');
+
+        // var inputElement = document.querySelectorAll('input');
+        
+        // console.log(inputElement);
+
+        // var bntElement = document.querySelector('button.botao');
+
+        // bntElement.onclick = function () {
+        //     alert('Botão clicado');
+        // }
+
+        var bntElement = document.querySelector('button.botao');
+        var inputElement = document.querySelector('input[name=nome]');
+
+        bntElement.onclick = function () {
+            var text = inputElement.value;
+            
+            alert(text);
+        }
+
+        
+    </script>
+</body>
+</html>

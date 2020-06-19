@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3</title>
+</head>
+
+<body>
+
+    
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        var bodyElement = document.querySelector('body');
+
+        var ulElement = document.createElement('ul');
+
+        bodyElement.appendChild(ulElement);
+
+        for (var nome of nomes) {
+            var liElement = document.createElement('li');
+            ulElement.appendChild(liElement);
+            var textElement = document.createTextNode(nome);
+            liElement.appendChild(textElement);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+</head>
+
+<body>
+    
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+
+    
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        var bodyElement = document.querySelector('body');
+
+        var ulElement = document.createElement('ul');
+
+        bodyElement.appendChild(ulElement);
+
+        for (var nome of nomes) {
+            var liElement = document.createElement('li');
+            ulElement.appendChild(liElement);
+            var textElement = document.createTextNode(nome);
+            liElement.appendChild(textElement);
+        }
+
+        function adicionar() {
+            var ulElement = document.querySelector('ul');
+            var inputElement = document.querySelector('input');
+
+            var liElement = document.createElement('li');
+
+            var textElement = document.createTextNode(inputElement.value);
+
+            ulElement.appendChild(liElement);
+            liElement.appendChild(textElement);
+
+            inputElement.value = '';
+        }
+    </script>
+</body>
+
+</html>
